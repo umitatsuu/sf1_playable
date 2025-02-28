@@ -1,0 +1,156 @@
+{
+  "BuildID": "ae626c4b-7990-4467-9250-98cdffadb6d5",
+  "Command": "project:build",
+  "ProjectID": "4113b20f2a9329e4387585bdd2ace0ed",
+  "ProjectStateHash": "5a5b787a0b97e2b8c4c114029cf9caf0ed84c7caf36dc2afe112a6fc5ba2d09f",
+  "StageCompletedAt": 3,
+  "EarliestFatalError": 0,
+  "StartTime": 1740655866627,
+  "EndTime": 1740655893292,
+  "PlaygroundUserID": 21376,
+  "OperatingSystem": "win32",
+  "UnityPackageID": null,
+  "TargetPlatform": "develop",
+  "UnityVersion": "2022.3.53f1",
+  "LunaVersion": "6.2.1",
+  "LogCount": 6,
+  "Logs": [
+    {
+      "LogID": "2dbefa52-25b6-494e-8958-3ef6f9a789a5",
+      "Order": 5,
+      "Timestamp": 1740655893455,
+      "Stage": 3,
+      "ErrorType": 3,
+      "ErrorCode": "LP3007",
+      "Description": "You are not using any custom events",
+      "Details": [
+        "You are not using any custom events. It is recommended to use custom events to have a better understanding of the playable."
+      ],
+      "DescriptionValues": [
+        ""
+      ],
+      "DetailsValues": [
+        ""
+      ],
+      "LogCount": 1,
+      "LinePosition": null,
+      "FilePath": "",
+      "ClassName": "",
+      "MemberName": "",
+      "Severity": 0
+    },
+    {
+      "LogID": "af3f7a7f-14ed-4760-9f8b-14914517a0bf",
+      "Order": 5,
+      "Timestamp": 1740655893455,
+      "Stage": 3,
+      "ErrorType": 3,
+      "ErrorCode": "LP3011",
+      "Description": "You are not using any LunaPlaygroundFields attributes.",
+      "Details": [
+        "You are not using any LunaPlaygroundFields attributes, it allows you to configure your playable to different concepts to find the best variation, which can drastically improve playable performance on all ad networks."
+      ],
+      "DescriptionValues": null,
+      "DetailsValues": null,
+      "LogCount": 1,
+      "LinePosition": null,
+      "FilePath": "",
+      "ClassName": "",
+      "MemberName": "",
+      "Severity": 0
+    },
+    {
+      "LogID": "e7d8e349-2314-411c-a8fc-222950a4ab79",
+      "Order": 0,
+      "Timestamp": 1740655876362,
+      "Stage": 1,
+      "ErrorType": 2,
+      "ErrorCode": "LP1007",
+      "Description": "Extensive use of mesh colliders",
+      "Details": [
+        "Usage of mesh colliders has negative effect on performance. You can use primitive colliders instead."
+      ],
+      "DescriptionValues": [],
+      "DetailsValues": [],
+      "LogCount": 1,
+      "LinePosition": 0,
+      "FilePath": "",
+      "ClassName": "",
+      "MemberName": "",
+      "Severity": 0
+    },
+    {
+      "LogID": "18799e04-fdb9-45e3-b505-58aea8c47e65",
+      "Order": 1,
+      "Timestamp": 1740655876363,
+      "Stage": 1,
+      "ErrorType": 2,
+      "ErrorCode": "LP1016",
+      "Description": "Extensive usage of ParticleSystem Component",
+      "Details": [
+        "There is extensive usage of the ParticleSystem component.\nExcessive usage of any component can be detrimental to performance on lower and in some cases higher end devices, consider reducing the amount the component is used.\nRecommended count: 10, current count 41."
+      ],
+      "DescriptionValues": [
+        "ParticleSystem"
+      ],
+      "DetailsValues": [
+        "ParticleSystem",
+        "10",
+        "41"
+      ],
+      "LogCount": 1,
+      "LinePosition": 0,
+      "FilePath": "",
+      "ClassName": "",
+      "MemberName": "",
+      "Severity": 0
+    },
+    {
+      "LogID": "dd113b39-65b0-4e22-9888-785ff6368d1d",
+      "Order": 2,
+      "Timestamp": 1740655876377,
+      "Stage": 1,
+      "ErrorType": 2,
+      "ErrorCode": "LP1010",
+      "Description": "Looks like a collider was scaled, this might affect performance.",
+      "Details": [
+        "building_platform_009 (4)",
+        "Wall"
+      ],
+      "DescriptionValues": [],
+      "DetailsValues": [],
+      "LogCount": 2,
+      "LinePosition": 0,
+      "FilePath": "",
+      "ClassName": "",
+      "MemberName": "",
+      "Severity": 0
+    },
+    {
+      "LogID": "ae386a7c-91a7-45c2-a5cf-b51dd2a6d64c",
+      "Order": 3,
+      "Timestamp": 1740655876377,
+      "Stage": 1,
+      "ErrorType": 3,
+      "ErrorCode": "LP1008",
+      "Description": "There are missing components on Indicator.",
+      "Details": [
+        "Indicator",
+        "Indicator",
+        "Indicator",
+        "Indicator",
+        "Indicator"
+      ],
+      "DescriptionValues": [
+        "Indicator"
+      ],
+      "DetailsValues": [],
+      "LogCount": 5,
+      "LinePosition": 0,
+      "FilePath": "",
+      "ClassName": "",
+      "MemberName": "",
+      "Severity": 0
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+report@config:load 7.30
+Authorized using stored user info.
+report@account:authorize 7.18
+stderr: 'rm' is not recognized as an internal or external command,
+operable program or batch file.
+
+Exporting assets from Unity............
+
+Error:  . ⁢, EditorScripts, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+AnimationClipsCollection
+Name: Frank_RPG_Fighter_Skill02 ( Path: Assets/Frank_RPG_Fighter_Skill02.anim )
+Asset couldn't be serialized!
+  at  . ‥.  (System.Object , System.Exception ) [0x0001e] in <c74e6a5315a84c429fb27feef53ebf7d>:0 
+  at  . ‥+ .MoveNext () [0x0009b] in <c74e6a5315a84c429fb27feef53ebf7d>:0 
+  at  . ⁡.  () [0x0004c] in <c74e6a5315a84c429fb27feef53ebf7d>:0 
+  at  . —.  () [0x00151] in <c74e6a5315a84c429fb27feef53ebf7d>:0 
+Caused By: 
+Error: Luna.Unity.EditorScripts.ProjectDiagnostics.MecanimSerializationException, EditorScripts, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+Mecanim (Avatar) serialization error! Unfortunately we can't serialize given asset. Probably mecanim (Avatar) serialization doesn't support current Unity version. Please exclude this asset or use compatible Unity version.
+  at  . ⁢.  ( . ⁝ ) [0x00026] in <c74e6a5315a84c429fb27feef53ebf7d>:0 
+  at  . ‥+ .MoveNext () [0x00073] in <c74e6a5315a84c429fb27feef53ebf7d>:0 
+Caused By: 
+Error: System.NullReferenceException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Object reference not set to an instance of an object
+  at (wrapper managed-to-native) System.Runtime.InteropServices.Marshal.PtrToStructure(intptr,System.Type)
+  at System.Runtime.InteropServices.Marshal.PtrToStructure[T] (System.IntPtr ptr) [0x00000] in <b0b3ee161b9b40739da01ef24d5555a8>:0 
+  at  . ⁮.  (UnityEngine.AnimationClip ) [0x00052] in <c74e6a5315a84c429fb27feef53ebf7d>:0 
+  at  . ⁮.  (UnityEngine.AnimationClip ) [0x00000] in <c74e6a5315a84c429fb27feef53ebf7d>:0 
+Caused By: 
+Error: Exceptions was thrown!
+    at _0x4be061.action (C:\Users\ADMIN\Desktop\6.2.1\pipeline\Jakefile.js:6:3019198)
