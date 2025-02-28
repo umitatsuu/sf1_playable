@@ -1,0 +1,205 @@
+{
+  "BuildID": "e5a261eb-59c4-4350-acd4-d99d3a3c94f7",
+  "Command": "project:build",
+  "ProjectID": "4113b20f2a9329e4387585bdd2ace0ed",
+  "ProjectStateHash": "0f77edd478997fd14acbaafb4fa13b8fec981a34aee80fdcc2eecaf1a3e195f0",
+  "StageCompletedAt": 3,
+  "EarliestFatalError": 0,
+  "StartTime": 1740732201678,
+  "EndTime": 1740732228405,
+  "PlaygroundUserID": 21376,
+  "OperatingSystem": "win32",
+  "UnityPackageID": null,
+  "TargetPlatform": "develop",
+  "UnityVersion": "2022.3.53f1",
+  "LunaVersion": "6.2.1",
+  "LogCount": 7,
+  "Logs": [
+    {
+      "LogID": "0c3ced66-ed2b-4574-9aa2-4acac2b206bf",
+      "Order": 6,
+      "Timestamp": 1740732228549,
+      "Stage": 3,
+      "ErrorType": 3,
+      "ErrorCode": "LP3007",
+      "Description": "You are not using any custom events",
+      "Details": [
+        "You are not using any custom events. It is recommended to use custom events to have a better understanding of the playable."
+      ],
+      "DescriptionValues": [
+        ""
+      ],
+      "DetailsValues": [
+        ""
+      ],
+      "LogCount": 1,
+      "LinePosition": null,
+      "FilePath": "",
+      "ClassName": "",
+      "MemberName": "",
+      "Severity": 0
+    },
+    {
+      "LogID": "4fb9dd76-11ed-4b0f-b53b-db512300e6c1",
+      "Order": 6,
+      "Timestamp": 1740732228549,
+      "Stage": 3,
+      "ErrorType": 3,
+      "ErrorCode": "LP3011",
+      "Description": "You are not using any LunaPlaygroundFields attributes.",
+      "Details": [
+        "You are not using any LunaPlaygroundFields attributes, it allows you to configure your playable to different concepts to find the best variation, which can drastically improve playable performance on all ad networks."
+      ],
+      "DescriptionValues": null,
+      "DetailsValues": null,
+      "LogCount": 1,
+      "LinePosition": null,
+      "FilePath": "",
+      "ClassName": "",
+      "MemberName": "",
+      "Severity": 0
+    },
+    {
+      "LogID": "97846d60-535f-4ab9-a11e-5bccef1d5875",
+      "Order": 0,
+      "Timestamp": 1740732212016,
+      "Stage": 1,
+      "ErrorType": 2,
+      "ErrorCode": "LP1007",
+      "Description": "Extensive use of mesh colliders",
+      "Details": [
+        "Usage of mesh colliders has negative effect on performance. You can use primitive colliders instead."
+      ],
+      "DescriptionValues": [],
+      "DetailsValues": [],
+      "LogCount": 1,
+      "LinePosition": 0,
+      "FilePath": "",
+      "ClassName": "",
+      "MemberName": "",
+      "Severity": 0
+    },
+    {
+      "LogID": "92c9b778-42e5-4628-83ef-fea4841c3de5",
+      "Order": 1,
+      "Timestamp": 1740732212016,
+      "Stage": 1,
+      "ErrorType": 2,
+      "ErrorCode": "LP1016",
+      "Description": "Extensive usage of ParticleSystem Component",
+      "Details": [
+        "There is extensive usage of the ParticleSystem component.\nExcessive usage of any component can be detrimental to performance on lower and in some cases higher end devices, consider reducing the amount the component is used.\nRecommended count: 10, current count 41."
+      ],
+      "DescriptionValues": [
+        "ParticleSystem"
+      ],
+      "DetailsValues": [
+        "ParticleSystem",
+        "10",
+        "41"
+      ],
+      "LogCount": 1,
+      "LinePosition": 0,
+      "FilePath": "",
+      "ClassName": "",
+      "MemberName": "",
+      "Severity": 0
+    },
+    {
+      "LogID": "a6108851-c2dd-4b69-9c8b-ce8b8a40aee3",
+      "Order": 2,
+      "Timestamp": 1740732212017,
+      "Stage": 1,
+      "ErrorType": 2,
+      "ErrorCode": "LP1022",
+      "Description": "Extensive use of shader variants",
+      "Details": [
+        "Extensive usage of shader variants negatively affects playable startup time. Please consider them to be less than 20 (24 found). Check Runtime analysis -> shader tab to see used shaders."
+      ],
+      "DescriptionValues": [],
+      "DetailsValues": [
+        "20",
+        "24"
+      ],
+      "LogCount": 1,
+      "LinePosition": 0,
+      "FilePath": "",
+      "ClassName": "",
+      "MemberName": "",
+      "Severity": 0
+    },
+    {
+      "LogID": "104db3cf-01f5-4bea-a958-c50c4aa22c4e",
+      "Order": 3,
+      "Timestamp": 1740732212026,
+      "Stage": 1,
+      "ErrorType": 2,
+      "ErrorCode": "LP1010",
+      "Description": "Looks like a collider was scaled, this might affect performance.",
+      "Details": [
+        "Wall",
+        "Cube (2)",
+        "Cube"
+      ],
+      "DescriptionValues": [],
+      "DetailsValues": [],
+      "LogCount": 3,
+      "LinePosition": 0,
+      "FilePath": "",
+      "ClassName": "",
+      "MemberName": "",
+      "Severity": 0
+    },
+    {
+      "LogID": "b84b0e10-cf55-4d8d-85c4-edb8271956e1",
+      "Order": 4,
+      "Timestamp": 1740732212026,
+      "Stage": 1,
+      "ErrorType": 3,
+      "ErrorCode": "LP1008",
+      "Description": "There are missing components on Indicator.",
+      "Details": [
+        "Indicator",
+        "Indicator",
+        "Indicator",
+        "Indicator",
+        "Indicator",
+        "Traffic",
+        "Road",
+        "CrossRoad",
+        "Section_1A",
+        "Section_1A",
+        "Section_1B",
+        "Section_3B",
+        "Section_3C",
+        "CrossRoad",
+        "Section_1A",
+        "Section_1A",
+        "Section_1B",
+        "Section_3B",
+        "Section_3C",
+        "CrossRoad",
+        "Section_1A",
+        "Section_1B",
+        "Section_1A",
+        "Section_1B",
+        "Section_3A",
+        "Section_3B",
+        "Section_3A",
+        "Section_3B",
+        "Section_B",
+        "Section_B"
+      ],
+      "DescriptionValues": [
+        "Indicator"
+      ],
+      "DetailsValues": [],
+      "LogCount": 30,
+      "LinePosition": 0,
+      "FilePath": "",
+      "ClassName": "",
+      "MemberName": "",
+      "Severity": 0
+    }
+  ]
+}

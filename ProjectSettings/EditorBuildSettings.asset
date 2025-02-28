@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SpiderSwing.unity
     guid: 6892498d1d0db564c8bcbafc1ea7e7ef
+  - enabled: 1
+    path: Assets/Scenes/SpiderSwing 2.unity
+    guid: 061da27b1808ebe41a1e83b1494640ab
   m_configObjects: {}

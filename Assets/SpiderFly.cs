@@ -14,9 +14,11 @@ public class SpiderFly : MonoBehaviour
     public Animator[] enemies;
     public GameObject btFullGame, guideHook;
     public AudioClip[] clips;
+    public GameObject trailL, trailR;
     public AudioSource swingSound;
     bool isPunch = false;
     public AudioSource lightingSound, exploseSound;
+    public GameObject popupSpawn;
     
     int swingCount = 0;
     // Start is called before the first frame update
@@ -24,7 +26,7 @@ public class SpiderFly : MonoBehaviour
         swingCount++;
         rid.velocity = Vector3.zero;
         controller.Release();
-        var vector = Quaternion.AngleAxis(Random.Range(-5f, 5f), Vector3.up) * transform.forward;
+        var vector = Quaternion.AngleAxis(Random.Range(-5f, 5f), Vector3.up) * transform.forward * 1.5f;
         if (swingCount >= 3) {
             var tmp = punchPoint.position;
             tmp.y = transform.position.y;
@@ -37,6 +39,8 @@ public class SpiderFly : MonoBehaviour
         rid.AddForce(forceDirection * Random.Range(40000, 50000), ForceMode.Force);
         int index = Random.Range(0, clips.Length);
         swingSound.PlayOneShot(clips[index]);
+        trailL.SetActive(true);
+        trailR.SetActive(true);
     }
 
     
@@ -44,7 +48,7 @@ public class SpiderFly : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "jump") {
-            if (rid.velocity.y < 0 && animator.GetCurrentAnimatorStateInfo(0).IsName("fall"))
+            if (rid.velocity.y < 0 && animator.GetCurrentAnimatorStateInfo(0).IsName("fall1"))
             { 
                 Time.timeScale = 0;
                 guideHook.SetActive(true);
@@ -56,8 +60,18 @@ public class SpiderFly : MonoBehaviour
             rid.velocity = Vector3.zero;
             rid.isKinematic = true;
             Time.timeScale = 0;
-            gameManager.btSwing.SetActive(false);
-            gameManager.btSkill.SetActive(true);
+
+            if (popupSpawn != null)
+            {
+                popupSpawn.SetActive(true);
+                gameManager.btSwing.SetActive(false);
+                Luna.Unity.LifeCycle.GameEnded();
+            }
+            else
+            {
+                gameManager.btSwing.SetActive(false);
+                gameManager.btSkill.SetActive(true);
+            }
         }
     }
 
